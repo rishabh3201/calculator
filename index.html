@@ -1,0 +1,77 @@
+<html>
+<head>
+	<style >
+		#clear{
+			width: 130px;
+			background-color: #fb0066;
+		}
+		.formstyle{
+			font-family: 'Orbitron', sans-serif;
+			width: 130px;
+			height: 271px;
+			margin: auto;
+			align-content: center;
+			border: 2px solid black;
+		}
+		input{
+			width: 40px;
+			background-color: #191b28;
+			color: white;
+
+		}
+		#answerstyle{
+			width: 130px;
+			background-color: #dcdbe1;
+			color: black;
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="formstyle">
+		<form name="forms">
+			<input type="text" name="answers" id="answerstyle"><br></br>
+
+			<input type="button" value=" 1 " onclick="forms.answers.value += '1' ">
+			<input type="button" value=" 2 " onclick="forms.answers.value += '2' ">
+			<input type="button" value=" 3 " onclick="forms.answers.value += '3' ">
+
+			<br> </br>
+
+			<input type="button" value=" 4 " onclick="forms.answers.value += '4' ">
+			<input type="button" value=" 5 " onclick="forms.answers.value += '5' ">
+			<input type="button" value=" 6 " onclick="forms.answers.value += '6' ">
+
+			<br></br>
+
+			<input type="button" value=" 7 " onclick="forms.answers.value += '7' ">
+			<input type="button" value=" 8 " onclick="forms.answers.value += '8' ">
+			<input type="button" value=" 9 " onclick="forms.answers.value += '9' ">
+
+			<br></br>
+
+			<input type="button" value=" + " onclick="forms.answers.value += '+' ">
+			<input type="button" value=" - " onclick="forms.answers.value += '-' ">
+			<input type="button" value=" * " onclick="forms.answers.value += '*' ">
+
+			<br></br>
+
+			<input type="button" value=" / " onclick="forms.answers.value += '/' ">
+			<input type="button" value=" 0 " onclick="forms.answers.value += '0' ">
+			<input type="button" value=" = " onclick="forms.answers.value = eval(forms.answers.value) ">
+
+			<br></br>
+
+			<input type="button" value="Clear All" onclick="forms.answers.value =' ' " id="clear">
+
+
+		</form>
+
+
+	</div>
+
+
+</body>
+</html>
